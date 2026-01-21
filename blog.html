@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Nishikino-kun's Private Study</title>
+  </head>
+  <body>
+    
+    <!-- 
+    ╔══════════════════════════════════════════════════════════════════════════╗
+    ║                         POST TYPE TEMPLATES                              ║
+    ║.                                                                         ║
+    ╚══════════════════════════════════════════════════════════════════════════╝
+    
+    ═══════════════════════════════════════════════════════════════════════════
+    SHORT TEXT POST (Quick thoughts)
+    ═══════════════════════════════════════════════════════════════════════════
+    <div class="post-box post-text">
+      <div class="post-header">
+        <span class="post-type">💭 Thought</span>
+        <span class="post-date">Just now</span>
+      </div>
+      <p>Insert Text Here...</p>
+    </div>
+    
+    ═══════════════════════════════════════════════════════════════════════════
+    TRAINING POST (Workouts, PRs, updates, thoughts)
+    ═══════════════════════════════════════════════════════════════════════════
+    <div class="post-box post-gym">
+      <div class="post-header">
+        <span class="post-type">💪 Training</span>
+        <span class="post-date">2 hours ago</span>
+      </div>
+      <h3>Post Title Here</h3>
+      <p>Your gym content here...</p>
+      <p>More paragraphs as needed...</p>
+      <div class="post-footer">
+        <span class="tag">#gains</span>
+        <span class="tag">#deadlift</span>
+      </div>
+    </div>
+    
+    ═══════════════════════════════════════════════════════════════════════════
+    YURI POST (Reviews, thoughts on yuri )
+    ═══════════════════════════════════════════════════════════════════════════
+    <div class="post-box post-yuri">
+      <div class="post-header">
+        <span class="post-type">🌸 Yuri</span>
+        <span class="post-date">Yesterday</span>
+      </div>
+      <h3>Title/Series Name</h3>
+      <p>Your review or thoughts here...</p>
+      <div class="post-footer">
+        <span class="tag">#baihe</span>
+        <span class="tag">#manga</span>
+      </div>
+    </div>
+    
+    ═══════════════════════════════════════════════════════════════════════════
+    PERSONAL POST (Life updates, reflections, longer thoughts)
+    ═══════════════════════════════════════════════════════════════════════════
+    <div class="post-box post-personal">
+      <div class="post-header">
+        <span class="post-type">📝 Personal</span>
+        <span class="post-date">3 days ago</span>
+      </div>
+      <h3>Post Title</h3>
+      <p>Your personal thoughts here...</p>
+      <p>Multiple paragraphs work great for this type...</p>
+      <div class="post-footer">
+        <span class="tag">#life</span>
+      </div>
+    </div>
+    
+    ═══════════════════════════════════════════════════════════════════════════
+    QUOTE POST (Highlighted quotes)
+    ═══════════════════════════════════════════════════════════════════════════
+    <div class="post-box post-quote">
+      <div class="post-header">
+        <span class="post-type">💬 Quote</span>
+        <span class="post-date">5 hours ago</span>
+      </div>
+      <blockquote>
+        "Your quote text here..."
+      </blockquote>
+      <p class="quote-source">— source or your thoughts on it</p>
+    </div>
+    
+    ═══════════════════════════════════════════════════════════════════════════
+    IMAGE POST (Photos with captions)
+    ═══════════════════════════════════════════════════════════════════════════
+    <div class="post-box post-image">
+      <div class="post-header">
+        <span class="post-type">📸 Photo</span>
+        <span class="post-date">Yesterday</span>
+      </div>
+      <img src="images/your-image.jpg" alt="Description" style="width: 100%; border-radius: 4px; margin-bottom: 15px;">
+      <p>Your caption here...</p>
+    </div>
+    
+    ═══════════════════════════════════════════════════════════════════════════
+    LINK POST (Shared articles, resources)
+    ═══════════════════════════════════════════════════════════════════════════
+    <div class="post-box post-link">
+      <div class="post-header">
+        <span class="post-type">🔗 Link</span>
+        <span class="post-date">2 days ago</span>
+      </div>
+      <div class="link-preview">
+        <h4><a href="https://example.com">Article Title Here</a></h4>
+        <p class="link-desc">Your thoughts or description of the link...</p>
+      </div>
+    </div>
+    
+    ═══════════════════════════════════════════════════════════════════════════
+    MUSIC POST (music thoughts)
+    ═══════════════════════════════════════════════════════════════════════════
+    <div class="post-box post-music">
+      <div class="post-header">
+        <span class="post-type">🎵 Music</span>
+        <span class="post-date">4 days ago</span>
+      </div>
+      <h4>Currently Listening / Now Playing</h4>
+      <p><strong>Track:</strong> Song Name<br>
+      <strong>Artist:</strong> Artist Name</p>
+      <p>Your thoughts on the music...</p>
+      <div class="post-footer">
+        <span class="tag">#dj</span>
+        <span class="tag">#music</span>
+      </div>
+    </div>
+    
+    ═══════════════════════════════════════════════════════════════════════════
+    NOTES:
+    - Change post-date to whatever makes sense (Just now, 2 hours ago, Yesterday, etc.)
+    - Add or remove tags in post-footer as needed
+    - h3 is optional - use for titled posts
+    - You can mix elements from different post types
+    - Remember to keep posts in reverse chronological order (newest at top)
+    ═══════════════════════════════════════════════════════════════════════════
+    -->
+    
+     <div id="container">
+      <div id="header" style="height: 240px;">
+        <img src="images/OUT-MAKI-TRANS.PNG" alt="Header image" class="header-image2">
+        <img src="images/TRANSMASC-ADORA.PNG" alt="Header image" class="header-image3">
+        <img src="images/nishikinokun-header-image-transparent.PNG" alt="Header image" class="header-image">
+        <h1 class="site-title neon-glow">NISHIKINO-KUN</h1>
+      </div>
+      <div id="headerArea">
+        <nav id="navbar" style="margin-bottom: 10px;">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="baihe.html">Garden of Glass</a></li>
+            <li><a href="training.html">Training</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="archive.html">Archive</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div id="flex">
+        <main>
+          <h1 class="main-header-title">Stream</h1>
+          <p><strong>19PRINCE</strong></p>
+          
+
+          <!-- Short Reaction Post -->
+          <div class="post-box post-text">
+            <div class="post-header">
+              <span class="post-type">💭 Thought</span>
+              <span class="post-date">Just Now</span>
+            </div>
+            <p>Was supposed to wait to watch Candy with a few friends, but I got impatient lol. It gives me such jjwxc gl novel vibes but as a drama, so I couldn't wait to watch it. </p>
+            <p> My first impression isn't really much to go off of. Every show's episode 1 has its flaws. Lin Can's actress is flawlessly beautiful, in contrast to Nuannuan's who, while not ugly and is pretty too, is intentionally(?) made up to be...a hot mess lol. Seems like they're going for the warm dumb, poor, hardworking girl x cold scheming, rich, chaebol/actress type. It's not bad but...I think I'd like one of my domineering CEO ABO stories as a drama next please. But which one...?</p>
+           <p> Episodes release weekly every Friday so we'll see how this show develops. I think it could be anywhere from 10 to 20 episodes long.
+            </p>
+            <p><a href="https://www.gagaoolala.com/en/videos/6184/candy-2026"><strong><em>Watch Candy on Gagaoolala to support Yuri content being developed</em></strong></a></p>
+            <div class="post-footer">
+              <span class="tag">#candy</span>
+              <span class="tag">#baihe</span>
+              <span class="tag">#yuri</span>
+            </div>
+          </div>
+
+          <!-- Music Post -->
+          <div class="post-box post-music">
+            <div class="post-header">
+              <span class="post-type">🎵 Music</span>
+              <span class="post-date">4 days ago</span>
+            </div>
+            <h4>Currently Listening</h4>
+            <p><strong>Track:</strong> Heart Station<br>
+            <strong>Artist:</strong> Utada Hikaru</p>
+            <p>This song is like a season soundtrack to my soul...</p>
+            <div class="post-footer">
+              <span class="tag">#hikaru-utada</span>
+              <span class="tag">#music</span>
+            </div>
+          </div>
+
+        </main>
+        
+        <aside id="rightSidebar">
+          <h2>Tags</h2>
+          <div class="box tag-cloud">
+            <a href="#" class="tag-bubble">#yuri</a>
+            <a href="#" class="tag-bubble">#gym</a>
+            <a href="#" class="tag-bubble">#gains</a>
+            <a href="#" class="tag-bubble">#baihe</a>
+            <a href="#" class="tag-bubble">#personal</a>
+            <a href="#" class="tag-bubble">#bears</a>
+            <a href="#" class="tag-bubble">#dj</a>
+          </div>
+          <!-- <a href="#" class="tag-bubble">#trans</a>
+          <a href="#" class="tag-bubble">#projects</a> --> 
+          
+          <h2>Archive</h2>
+          <div class="box">
+            <ul style="padding-left:10px;">
+              <li><a href="#">January 2026 (47)</a></li>
+              <li><a href="#">December 2025 (32)</a></li>
+              <li><a href="#">November 2025 (28)</a></li>
+            </ul>
+          </div>
+        </aside>
+
+        <aside id="leftSidebar">
+          <h2>Who Am I?</h2>
+          <div class="box">
+            <p>Call me Prince Nishikino. I work out, read yuri, dj, rap, and do whatever I feel like doing in the moment.</p>
+            <p>This space is for me to express these things.</p>
+          </div>
+          
+          <h2>Socials</h2>
+          <ul>
+            <li><a href="instagram.com/nishikino.kun">Instagram</a></li>
+            <li><a href="tiktok.com/nishikin0">Tiktok</a></li>
+            <li><a href="19prince.tumblr.com">Tumblr</a></li>
+          </ul>
+          
+          <h2>Site Stats</h2>
+          <p style="font-size: 0.9em;">Posts: 47<br>
+          Est. 2026<br>
+          Updated Daily</p>
+        </aside>
+      </div>
+      
+      <footer id="footer" style="margin-top: 10px;">
+        <p>© 2026 Nishikino-kun</p>
+      </footer>
+    </div>
+
+    <style>
+      /* Nishikino-kun's Color Palette - Darker Version */
+      :root {
+        --black-bg: #0f0f14;
+        --black-light: #1a1a1f;
+        --crimson: #A01149;
+        --soft-pink: #E8B4D0;
+        --slate: #4A5568;
+        --text-main: #F5F5F5;
+        --text-muted: #E8E8E8;
+        --gym-color: #A01149;
+        --yuri-color: #E8B4D0;
+        --personal-color: #4A5568;
+        --music-color: #9D4EDD;
+      }
+
+      /* Graffiti Font for Header - AerosolDier */
+      @font-face {
+        font-family: 'AerosolDier';
+        src: url('/fonts/Aerosoldier_PERSONAL_USE_ONLY.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'A Dripping Marker';
+        src: url('fonts/adrip1.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+     @font-face {
+        font-family: 'Bebas Neue Regular';
+        src: url('fonts/BebasNeue-Regular.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: Nunito;
+        src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+      }
+
+      @font-face {
+        font-family: Nunito;
+        src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
+        font-weight: bold;
+      }
+
+      body {
+        font-family: 'Nunito', sans-serif;
+        margin: 0;
+        background-color: var(--black-bg);
+        color: var(--text-main);
+        line-height: 1.6;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      #container {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      #container a {
+        color: var(--crimson);
+        font-weight: bold;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      #container a:hover {
+        color: var(--soft-pink);
+      }
+
+      #header {
+        width: 100%;
+        background: linear-gradient(135deg, var(--black-bg) 0%, var(--crimson) 100%);
+        height: 240px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      /* Main Header Style */
+      .main-header-title{
+        font-family: 'A Dripping Marker';
+        font-size:75px;
+        color: #F0F0F0;
+      }
+
+      /* Site Title Styles */
+      .site-title {
+        font-family: 'AerosolDier', cursive;
+        font-size: 64px;
+        font-weight: 400;
+        letter-spacing: 8px;
+        transform: rotate(-15deg);
+        margin-left: 10px;
+        margin-top: 40px;
+        border: none;
+        text-decoration: none;
+        position: relative;
+        z-index: 10;
+        text-transform: uppercase;
+      }
+
+      /* NEON GLOW EFFECT */
+      .neon-glow {
+        color: #fff;
+        text-shadow: 
+          0 0 10px var(--crimson),
+          0 0 20px var(--crimson),
+          0 0 30px var(--crimson),
+          0 0 40px var(--crimson),
+          0 0 70px var(--soft-pink),
+          0 0 80px var(--soft-pink),
+          0 0 100px var(--soft-pink);
+        animation: neon-flicker 3s infinite alternate;
+      }
+
+      @keyframes neon-flicker {
+        0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+          text-shadow: 
+            0 0 10px var(--crimson),
+            0 0 20px var(--crimson),
+            0 0 30px var(--crimson),
+            0 0 40px var(--crimson),
+            0 0 70px var(--soft-pink),
+            0 0 80px var(--soft-pink),
+            0 0 100px var(--soft-pink);
+        }
+        20%, 24%, 55% {
+          text-shadow: 
+            0 0 5px var(--crimson),
+            0 0 10px var(--crimson);
+        }
+      }
+
+      #navbar {
+        background-color: var(--black-light);
+        width: 100%;
+        border-bottom: 2px solid var(--slate);
+      }
+
+      #navbar ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        justify-content: space-evenly;
+      }
+
+      #navbar li {
+        padding: 12px 0;
+      }
+
+      #navbar li a {
+        color: var(--soft-pink);
+        font-weight: 800;
+        text-decoration: none;
+        padding: 10px 15px;
+        transition: all 0.3s ease;
+      }
+
+      #navbar li a:hover {
+        color: var(--crimson);
+        background-color: rgba(160, 17, 73, 0.1);
+        border-radius: 4px;
+      }
+
+      #flex {
+        display: flex;
+        gap: 0;
+      }
+
+      aside {
+        background-color: var(--black-light);
+        width: 200px;
+        padding: 20px;
+        font-size: 0.95em;
+        border: 1px solid var(--slate);
+      }
+
+      main {
+        background-color: #1f1f26;
+        flex: 1;
+        padding: 30px;
+        order: 2;
+        border-top: 1px solid var(--slate);
+        border-bottom: 1px solid var(--slate);
+      }
+
+      #leftSidebar {
+        order: 1;
+        border-right: none;
+      }
+
+      #rightSidebar {
+        order: 3;
+        border-left: none;
+      }
+      
+      .header-image {
+        position: absolute;
+        width: 215px;
+        height: auto;
+        right: 100px;
+        top: 95%;
+        transform: translateY(-50%);
+        z-index: 5;
+      }
+      
+      .header-image2 {
+        position: absolute;
+        width: 250px;
+        height: auto;
+        right: 250px;
+        top: 100%;
+        transform: translateY(-50%);
+        z-index: 5;
+      }
+      
+      .header-image3 {
+        position: absolute;
+        width: 250px;
+        height: auto;
+        right: -10px;
+        top: 85%;
+        transform: translateY(-50%);
+        z-index: 5;
+      }
+
+      footer {
+        background-color: var(--black-light);
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+        font-size: 0.9em;
+        color: var(--text-muted);
+        border-top: 2px solid var(--slate);
+      }
+
+      h1, h2, h3, h4 {
+        color: var(--crimson);
+        margin-top: 0;
+      }
+
+      h1 {
+        font-family: Nunito;
+        font-size: 28px;
+        border-bottom: 2px solid var(--crimson);
+        padding-bottom: 10px;
+      }
+
+      h2 {
+        font-family: 'Bebas Neue Regular';
+        font-size: 20px;
+        margin-top: 25px;
+      }
+
+      h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      h4 {
+        font-size: 16px;
+        color: var(--soft-pink);
+        margin-top: 10px;
+      }
+
+      strong {
+        color: var(--soft-pink);
+      }
+
+      .box {
+        background-color: var(--black-bg);
+        border: 2px solid var(--slate);
+        border-left: 4px solid var(--crimson);
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 4px;
+      }
+
+      /* TUMBLR-STYLE POST BOXES */
+      .post-box {
+        background-color: var(--black-bg);
+        border: 2px solid var(--slate);
+        border-radius: 4px;
+        padding: 20px;
+        margin-bottom: 20px;
+        transition: all 0.3s ease;
+      }
+
+      .post-box:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(160, 17, 73, 0.2);
+      }
+
+      /* Color-coded left borders */
+      .post-gym {
+        border-left: 6px solid var(--gym-color);
+      }
+
+      .post-yuri {
+        border-left: 6px solid var(--yuri-color);
+      }
+
+      .post-personal {
+        border-left: 6px solid var(--personal-color);
+      }
+
+      .post-music {
+        border-left: 6px solid var(--music-color);
+      }
+
+      .post-text {
+        border-left: 6px solid var(--slate);
+      }
+
+      .post-quote {
+        border-left: 6px solid var(--soft-pink);
+        background-color: rgba(232, 180, 208, 0.05);
+      }
+
+      .post-image {
+        border-left: 6px solid #4A9568;
+      }
+
+      .post-link {
+        border-left: 6px solid #5E81AC;
+      }
+
+      .post-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--slate);
+      }
+
+      .post-type {
+        font-size: 0.9em;
+        font-weight: bold;
+        color: var(--soft-pink);
+      }
+
+      .post-date {
+        font-size: 0.85em;
+        color: var(--text-muted);
+        font-style: italic;
+      }
+
+      .post-box h3 {
+        color: var(--crimson);
+        margin-bottom: 12px;
+        font-size: 20px;
+      }
+
+      .post-box h4 {
+        color: var(--soft-pink);
+        margin-bottom: 10px;
+      }
+
+      .post-box p {
+        color: var(--text-main);
+        line-height: 1.7;
+        margin-bottom: 10px;
+      }
+
+      /* Quote styling */
+      blockquote {
+        margin: 0;
+        padding: 15px 20px;
+        border-left: 4px solid var(--crimson);
+        font-size: 1.1em;
+        font-style: italic;
+        color: var(--text-main);
+      }
+
+      .quote-source {
+        font-size: 0.9em;
+        color: var(--text-muted);
+        margin-top: 10px;
+      }
+
+      /* Image placeholder */
+      .image-placeholder {
+        width: 100%;
+        height: 300px;
+        background: linear-gradient(135deg, var(--black-light) 0%, var(--slate) 100%);
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-muted);
+        font-style: italic;
+        margin-bottom: 15px;
+      }
+
+      /* Link preview */
+      .link-preview {
+        background-color: var(--black-light);
+        padding: 15px;
+        border-radius: 4px;
+        border: 1px solid var(--slate);
+      }
+
+      .link-preview h4 {
+        margin: 0 0 10px 0;
+        color: var(--crimson);
+      }
+
+      .link-preview h4 a {
+        color: var(--crimson);
+      }
+
+      .link-desc {
+        font-size: 0.95em;
+        color: var(--text-muted);
+        margin: 0;
+      }
+
+      /* Post footer with tags */
+      .post-footer {
+        margin-top: 15px;
+        padding-top: 10px;
+        border-top: 1px solid var(--slate);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .tag {
+        display: inline-block;
+        padding: 4px 10px;
+        background-color: var(--black-light);
+        border: 1px solid var(--slate);
+        border-radius: 12px;
+        font-size: 0.8em;
+        color: var(--soft-pink);
+        transition: all 0.3s ease;
+      }
+
+      .tag:hover {
+        background-color: var(--crimson);
+        color: white;
+        border-color: var(--crimson);
+      }
+
+      /* Tag cloud in sidebar */
+      .tag-cloud {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .tag-bubble {
+        display: inline-block;
+        padding: 6px 12px;
+        background-color: var(--black-light);
+        border: 1px solid var(--slate);
+        border-radius: 16px;
+        font-size: 0.85em;
+        color: var(--soft-pink);
+        transition: all 0.3s ease;
+      }
+
+      .tag-bubble:hover {
+        background-color: var(--crimson);
+        color: white;
+        border-color: var(--crimson);
+        transform: scale(1.05);
+      }
+
+      aside ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      aside ul li {
+        margin: 8px 0;
+      }
+
+      aside h2 {
+        font-size: 18px;
+        color: var(--soft-pink);
+        border-bottom: 2px solid var(--slate);
+        padding-bottom: 8px;
+      }
+
+      @media only screen and (max-width: 800px) {
+        #flex {
+          flex-wrap: wrap;
+        }
+
+        aside {
+          width: 100%;
+          border: 1px solid var(--slate);
+          border-left: 4px solid var(--crimson);
+        }
+
+        main {
+          order: 1;
+        }
+
+        #leftSidebar {
+          order: 2;
+        }
+
+        #rightSidebar {
+          order: 3;
+        }
+
+        #navbar ul {
+          flex-wrap: wrap;
+        }
+      }
+    </style>
+  </body>
+</html>
