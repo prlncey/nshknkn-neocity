@@ -346,6 +346,17 @@ strong {
   border-radius: 4px;
 }
 
+.box-notfound {
+  background-color: var(--black-bg);
+  border: 2px solid var(--slate);
+  border-left: 4px solid var(--crimson);
+  padding: 15px;
+  margin: 15px 0;
+  width:100%;
+  height: 25%;
+  border-radius: 4px;
+}
+
 /* ═══════════════════════════════════════════════════════════════════
    BLOG POST STYLES (TUMBLR STYLE)
    ═══════════════════════════════════════════════════════════════════ */
