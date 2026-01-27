@@ -1,183 +1,850 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nishikino-kun's Private Study</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nishikino-kun - Upgraded Design</title>
   </head>
   <body>
-    <div id="container">
-      <div id="header" style="height: 240px">
-        <img
-          src="images/OUT-MAKI-TRANS.PNG"
-          alt="Header image"
-          class="header-image2"
-        />
-        <img
-          src="images/TRANSMASC-ADORA.PNG"
-          alt="Header image"
-          class="header-image3"
-        />
-        <img
-          src="images/nishikinokun-header-image-transparent.PNG"
-          alt="Header image"
-          class="header-image"
-        />
-        <h1 class="site-title neon-glow">NISHIKINO-KUN</h1>
+    
+    <!-- HEADER -->
+    <header id="header">
+      <div class="header-content">
+        <div class="graffiti-title">
+          <h1 class="site-title neon-glow">NISHIKINO-KUN</h1>
+        </div>
+        <div class="header-characters">
+          <div class="character-img" title="Maki">
+            <div class="placeholder-char">M</div>
+          </div>
+          <div class="character-img" title="Main">
+            <div class="placeholder-char">N</div>
+          </div>
+          <div class="character-img" title="Adora">
+            <div class="placeholder-char">A</div>
+          </div>
+        </div>
       </div>
-      <nav id="navbar" style="margin-bottom: 10px">
-        <ul>
-          <li><a href="index.html">Home</a></li>
+    </header>
 
-          <!-- Blog with dropdown -->
-          <li class="dropdown">
-          <a href="blog.html" aria-haspopup="true" aria-expanded="false">
-            Blog ▼
-          </a>
-              <ul class="dropdown-menu" role="menu">
-              <li role="none"><a href="blog.html#gym" role="menuitem">Gym Posts</a></li>
-              <li><a href="blog.html#gym">Gym Posts</a></li>
-              <li><a href="blog.html#yuri">Yuri Posts</a></li>
-              <li><a href="blog.html#personal">Personal</a></li>
-            </ul>
-          </li>
+    <!-- NAVIGATION -->
+    <nav id="navbar">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li class="dropdown">
+          <a href="blog.html">Blog ▼</a>
+          <ul class="dropdown-menu">
+            <li><a href="blog.html#gym">💪 Gym Posts</a></li>
+            <li><a href="blog.html#yuri">🌸 Yuri Reviews</a></li>
+            <li><a href="blog.html#personal">📝 Personal</a></li>
+          </ul>
+        </li>
+        <li><a href="baihe.html">Garden of Glass</a></li>
+        <li class="dropdown">
+          <a href="training.html">Training ▼</a>
+          <ul class="dropdown-menu">
+            <li><a href="training.html#current">Current Split</a></li>
+            <li><a href="training.html#prs">PR Tracker</a></li>
+            <li><a href="training.html#goals">Goals</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="archive.html">Archive</a></li>
+      </ul>
+    </nav>
 
-          <li><a href="baihe.html">Garden of Glass</a></li>
+    <!-- MAIN CONTENT AREA -->
+    <div id="container">
+      
+      <!-- Featured/Latest Section -->
+      <section class="featured-section">
+        <h2 class="page-title">Latest Updates</h2>
+        <div class="featured-post">
+          <div class="featured-badge">FEATURED</div>
+          <h3>Hit 350lb Deadlift PR!</h3>
+          <div class="post-meta">
+            <span class="post-date">January 18, 2026</span>
+            <span class="tag-inline gym-tag">💪 Gym</span>
+          </div>
+          <p>Finally hit the goal I set for myself. 350lbs felt heavy but clean. Progressive overload is working - been adding 5lbs every week and my form has never felt better. The key was focusing on leg drive and keeping my back tight throughout the entire lift.</p>
+          <a href="#" class="read-more">Read Full Post →</a>
+        </div>
+      </section>
 
-          <!-- Training with dropdown -->
-          <li class="dropdown">
-            <a href="training.html">Training ▼</a>
-            <ul class="dropdown-menu">
-              <li><a href="training.html#current">Current Split</a></li>
-              <li><a href="training.html#prs">PR Tracker</a></li>
-              <li><a href="training.html#goals">Goals</a></li>
-            </ul>
-          </li>
-
-          <li><a href="not_found.html">About</a></li>
-          <li><a href="not_found.html">Archive</a></li>
-        </ul>
-      </nav>
-
-      <div id="flex">
+      <!-- Content Grid with Sidebar -->
+      <div class="content-grid">
+        
+        <!-- Main Content -->
         <main>
-          <h1 class="main-header-title">Nishikino-Kun</h1>
-          <p><strong>Latest Updates</strong></p>
-          <div class="latest-updates" id="011826">
-            <p>
-              Updating the site, theme, etc. Still deciding what I want to do
-              with this place.
-            </p>
-            <p>
-              Finished
-              <b
-                ><i
-                  ><a href="https://m.jjwxc.net/book2/8522345"
-                    >"冰山教授她追悔莫及gl" [The Ice Cold Professor's Bitter
-                    Regrets]</a
-                  ></i
-                ></b
-              >
-              by <b><i>"纪春烟" [Ji Chunyan] </i></b>. I didn't finish the
-              extras but it's fine. 7.5-8 out of 10.
-            </p>
-            <p>Jesus Saves. Amen.</p>
-          </div>
+          
+          <!-- Gym Section -->
+          <section class="post-section">
+            <h2 class="section-title">💪 From The Gym</h2>
+            <div class="post-grid">
+              
+              <article class="post-card post-gym">
+                <div class="card-accent"></div>
+                <h3>Leg Day Protocol</h3>
+                <span class="date">Jan 17, 2026</span>
+                <p>Making it a commitment: no more skipping leg day. Biking to the gym makes it more intense. Today's session was brutal but worth it.</p>
+                <div class="card-footer">
+                  <span class="tag">#gains</span>
+                  <span class="tag">#legday</span>
+                </div>
+              </article>
 
-          <div class="box">
-            <h3>Recent Gym Session - Jan 19, 2026</h3>
-            <p>
-              Chest Day.Distracted but it was very fun to blast my chest.
-              Feeling sick so not sure when I'll get back to the gym. I'll pray
-              about it.
-            </p>
-          </div>
+              <article class="post-card post-gym">
+                <div class="card-accent"></div>
+                <h3>Back & Biceps Blast</h3>
+                <span class="date">Jan 16, 2026</span>
+                <p>Hit a new PR on deadlifts today! 315lbs x5. Feeling strong. The progressive overload strategy is really paying off.</p>
+                <div class="card-footer">
+                  <span class="tag">#deadlift</span>
+                  <span class="tag">#pr</span>
+                </div>
+              </article>
 
-          <h2>What is this place?</h2>
-          <p>
-            What's it like to be transmasculine? Grew up a dyke and now I'm a
-            dude(?) Sometimes I don't know. Here's a space to explore.
-          </p>
+            </div>
+          </section>
 
-          <p>
-            I update regularly, so check back often or follow my social media
-            for notifications.
-          </p>
+          <!-- Yuri Section -->
+          <section class="post-section">
+            <h2 class="section-title">🌸 Yuri Corner</h2>
+            <div class="post-grid">
+              
+              <article class="post-card post-yuri">
+                <div class="card-accent"></div>
+                <h3>The Ice Cold Professor's Bitter Regrets</h3>
+                <span class="date">Jan 17, 2026</span>
+                <p>冰山教授她追悔莫及gl by 纪春烟. MESSY. Age gap. Professor/student. This is exactly my kind of chaotic energy. 7.5/10.</p>
+                <div class="card-footer">
+                  <span class="tag">#baihe</span>
+                  <span class="tag">#audio-drama</span>
+                </div>
+              </article>
+
+              <article class="post-card post-yuri">
+                <div class="card-accent"></div>
+                <h3>Watched Candy Episode 1</h3>
+                <span class="date">Jan 14, 2026</span>
+                <p>Caved and watched Candy on Gagaoolala. Episode one was interesting - the setup is intriguing and the chemistry is already there.</p>
+                <div class="card-footer">
+                  <span class="tag">#thai-gl</span>
+                  <span class="tag">#review</span>
+                </div>
+              </article>
+
+            </div>
+          </section>
+
+          <!-- Personal Section -->
+          <section class="post-section">
+            <h2 class="section-title">📝 Personal Thoughts</h2>
+            <div class="post-grid">
+              
+              <article class="post-card post-personal">
+                <div class="card-accent"></div>
+                <h3>Bears Season Reflections</h3>
+                <span class="date">Jan 17, 2026</span>
+                <p>Bears season is over. Caleb Williams' OT play will go down in history. Very proud of the team - this is only the beginning if they stay focused.</p>
+                <div class="card-footer">
+                  <span class="tag">#bears</span>
+                  <span class="tag">#nfl</span>
+                </div>
+              </article>
+
+              <article class="post-card post-personal">
+                <div class="card-accent"></div>
+                <h3>Building This Site</h3>
+                <span class="date">Jan 15, 2026</span>
+                <p>Finally decided to build my own personal site. Something that feels like ME. Wanted that old-school blog vibe without algorithms.</p>
+                <div class="card-footer">
+                  <span class="tag">#meta</span>
+                  <span class="tag">#web-design</span>
+                </div>
+              </article>
+
+            </div>
+          </section>
+
         </main>
 
-        <aside id="rightSidebar">
-          <h2>Recent Posts</h2>
-          <div class="box">
-            <ul style="padding-left: 10px">
-              <li><a href="not_found.html">Leg Day Routine Update</a></li>
-              <li>
-                <a href="not_found.html">Review: Bloom Into You Vol. 8</a>
-              </li>
-              <li><a href="not_found.html">New Website Launch</a></li>
-              <li><a href="not_found.html">Progressive Overload Tips</a></li>
-            </ul>
-          </div>
-
-          <h2>Categories</h2>
-          <ul>
-            <li><a href="training.html">💪 Training</a></li>
-            <li><a href="baihe.html">🌸 Yuri Reviews</a></li>
-            <li><a href="blog.html">📝 Blog</a></li>
-          </ul>
-        </aside>
-
-        <aside id="leftSidebar">
-          <h2>Who Am I?</h2>
-          <div class="box">
-            <p>
-              Call me Prince Nishikino. I work out, read yuri, dj, rap, and do
-              whatever I feel like doing in the moment.
-            </p>
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          
+          <div class="sidebar-card">
+            <h3>Who Am I?</h3>
+            <p>Call me Prince Nishikino. I work out, read yuri, dj, rap, and do whatever I feel like doing in the moment.</p>
             <p>This space is for me to express these things.</p>
           </div>
 
-          <h2>Socials</h2>
-          <ul>
-            <li><a href="www.instagram.com/nishikino.kun">Instagram</a></li>
-            <li><a href="www.tiktok.com/nishikin0">Tiktok</a></li>
-            <li><a href="www.19prince.tumblr.com">Tumblr</a></li>
-          </ul>
+          <div class="sidebar-card">
+            <h3>Categories</h3>
+            <ul class="category-list">
+              <li><a href="#">💪 Training (15)</a></li>
+              <li><a href="#">🌸 Yuri Reviews (23)</a></li>
+              <li><a href="#">📝 Personal (9)</a></li>
+              <li><a href="#">⚙️ Projects (5)</a></li>
+            </ul>
+          </div>
 
-          <h2>Site Stats</h2>
-          <p style="font-size: 0.9em">
-            Posts: 47<br />
-            Est. 2026<br />
-            Updated Weekly
-          </p>
+          <div class="sidebar-card">
+            <h3>Connect</h3>
+            <div class="social-links">
+              <a href="#" class="social-btn">Instagram</a>
+              <a href="#" class="social-btn">Tiktok</a>
+              <a href="#" class="social-btn">Tumblr</a>
+            </div>
+          </div>
+
+          <div class="sidebar-card stats">
+            <h3>Site Stats</h3>
+            <div class="stat-item">
+              <span class="stat-number">47</span>
+              <span class="stat-label">Total Posts</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">2026</span>
+              <span class="stat-label">Est.</span>
+            </div>
+          </div>
+
         </aside>
+
       </div>
 
-      <footer id="footer" style="margin-top: 10px">
-        <p>© 2026 Nishikino-kun</p>
-      </footer>
     </div>
 
-    <script>
-      // Make dropdowns work on mobile (click instead of hover)
-      document.querySelectorAll(".dropdown > a").forEach((link) => {
-        link.addEventListener("click", (e) => {
-          if (window.innerWidth <= 800) {
-            e.preventDefault();
-            const dropdown = link.parentElement;
-            dropdown.classList.toggle("active");
-          }
-        });
-      });
-    </script>
-    <script>
-      // Allow Enter/Space to open dropdown
-      link.addEventListener("keydown", (e) => {
-        if (e.key === "Enter" || e.key === " ") {
-          e.preventDefault();
-          dropdown.classList.toggle("active");
+    <!-- FOOTER -->
+    <footer id="footer">
+      <p>© 2026 Nishikino-kun | Built with passion on Neocities</p>
+    </footer>
+
+    <style>
+      /* ═══════════════════════════════════════════════════════════════════
+         UPGRADED NISHIKINO-KUN STYLESHEET
+         ═══════════════════════════════════════════════════════════════════ */
+
+      :root {
+        --black-bg: #0f0f14;
+        --black-light: #1a1a1f;
+        --content-bg: #1f1f26;
+        --crimson: #A01149;
+        --soft-pink: #E8B4D0;
+        --slate: #4A5568;
+        --text-main: #F5F5F5;
+        --text-muted: #E8E8E8;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        background-color: var(--black-bg);
+        color: var(--text-main);
+        line-height: 1.6;
+      }
+
+      /* ═══════════════════════════════════════════════════════════════════
+         HEADER
+         ═══════════════════════════════════════════════════════════════════ */
+
+      #header {
+        background: linear-gradient(135deg, var(--black-bg) 0%, var(--crimson) 50%, var(--black-bg) 100%);
+        height: 280px;
+        position: relative;
+        overflow: hidden;
+        border-bottom: 4px solid var(--crimson);
+      }
+
+      #header::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: 
+          repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 10px,
+            rgba(255,255,255,0.02) 10px,
+            rgba(255,255,255,0.02) 20px
+          );
+        pointer-events: none;
+      }
+
+      .header-content {
+        max-width: 1400px;
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 60px;
+        position: relative;
+        z-index: 10;
+      }
+
+      .graffiti-title {
+        flex: 1;
+      }
+
+      .site-title {
+        font-family: 'Courier New', monospace;
+        font-size: 72px;
+        font-weight: 900;
+        letter-spacing: 8px;
+        transform: rotate(-8deg);
+        color: #fff;
+        text-shadow: 
+          0 0 10px var(--crimson),
+          0 0 20px var(--crimson),
+          0 0 30px var(--crimson),
+          0 0 40px var(--crimson),
+          0 0 70px var(--soft-pink),
+          0 0 80px var(--soft-pink);
+        animation: neon-flicker 3s infinite alternate;
+      }
+
+      @keyframes neon-flicker {
+        0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+          text-shadow: 
+            0 0 10px var(--crimson),
+            0 0 20px var(--crimson),
+            0 0 30px var(--crimson),
+            0 0 40px var(--crimson),
+            0 0 70px var(--soft-pink),
+            0 0 80px var(--soft-pink);
         }
-      });
-    </script>
+        20%, 24%, 55% {
+          text-shadow: 
+            0 0 5px var(--crimson),
+            0 0 10px var(--crimson);
+        }
+      }
+
+      .header-characters {
+        display: flex;
+        gap: 20px;
+      }
+
+      .character-img {
+        width: 120px;
+        height: 200px;
+        background: linear-gradient(135deg, var(--crimson), var(--soft-pink));
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        filter: drop-shadow(0 0 20px rgba(160, 17, 73, 0.5));
+        transition: transform 0.3s ease;
+        cursor: pointer;
+      }
+
+      .character-img:hover {
+        transform: translateY(-10px) scale(1.05);
+      }
+
+      .placeholder-char {
+        font-size: 64px;
+        font-weight: bold;
+        color: white;
+      }
+
+      /* ═══════════════════════════════════════════════════════════════════
+         NAVIGATION
+         ═══════════════════════════════════════════════════════════════════ */
+
+      #navbar {
+        background-color: var(--black-light);
+        border-bottom: 2px solid var(--slate);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+      }
+
+      #navbar ul {
+        max-width: 1400px;
+        margin: 0 auto;
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        gap: 10px;
+        padding: 0;
+      }
+
+      #navbar > ul > li {
+        position: relative;
+      }
+
+      #navbar li a {
+        display: block;
+        padding: 18px 25px;
+        color: var(--soft-pink);
+        text-decoration: none;
+        font-weight: 800;
+        font-size: 15px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+      }
+
+      #navbar li a:hover,
+      #navbar li a.active {
+        background-color: var(--crimson);
+        color: white;
+      }
+
+      /* Dropdown */
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: var(--content-bg);
+        border: 2px solid var(--slate);
+        border-top: 3px solid var(--crimson);
+        min-width: 220px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+        z-index: 1000;
+      }
+
+      .dropdown:hover .dropdown-menu {
+        display: block;
+      }
+
+      .dropdown-menu li {
+        border-bottom: 1px solid var(--slate);
+      }
+
+      .dropdown-menu li:last-child {
+        border-bottom: none;
+      }
+
+      .dropdown-menu li a {
+        padding: 12px 20px;
+      }
+
+      .dropdown-menu li a:hover {
+        background-color: var(--crimson);
+        padding-left: 25px;
+      }
+
+      /* ═══════════════════════════════════════════════════════════════════
+         CONTAINER & LAYOUT
+         ═══════════════════════════════════════════════════════════════════ */
+
+      #container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+
+      .content-grid {
+        display: grid;
+        grid-template-columns: 1fr 350px;
+        gap: 40px;
+        margin-top: 40px;
+      }
+
+      /* ═══════════════════════════════════════════════════════════════════
+         FEATURED SECTION
+         ═══════════════════════════════════════════════════════════════════ */
+
+      .featured-section {
+        margin-bottom: 60px;
+      }
+
+      .page-title {
+        font-family: 'Impact', sans-serif;
+        font-size: 64px;
+        color: var(--crimson);
+        text-align: center;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        position: relative;
+      }
+
+      .page-title::after {
+        content: '';
+        display: block;
+        width: 200px;
+        height: 4px;
+        background: linear-gradient(90deg, transparent, var(--crimson), transparent);
+        margin: 20px auto 0;
+      }
+
+      .featured-post {
+        background: linear-gradient(135deg, var(--content-bg) 0%, #252530 100%);
+        border: 3px solid var(--crimson);
+        border-radius: 12px;
+        padding: 40px;
+        position: relative;
+        box-shadow: 0 10px 40px rgba(160, 17, 73, 0.3);
+      }
+
+      .featured-badge {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: var(--crimson);
+        color: white;
+        padding: 6px 16px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 2px;
+      }
+
+      .featured-post h3 {
+        font-size: 36px;
+        color: var(--soft-pink);
+        margin-bottom: 15px;
+      }
+
+      .post-meta {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .post-date {
+        color: var(--text-muted);
+        font-size: 14px;
+        font-style: italic;
+      }
+
+      .tag-inline {
+        padding: 4px 12px;
+        border-radius: 12px;
+        font-size: 13px;
+        font-weight: bold;
+      }
+
+      .gym-tag {
+        background: var(--crimson);
+        color: white;
+      }
+
+      .featured-post p {
+        font-size: 18px;
+        line-height: 1.8;
+        margin-bottom: 25px;
+        color: var(--text-main);
+      }
+
+      .read-more {
+        display: inline-block;
+        background: transparent;
+        border: 2px solid var(--crimson);
+        color: var(--crimson);
+        padding: 12px 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .read-more::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        background: var(--crimson);
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        transition: width 0.6s, height 0.6s;
+        z-index: -1;
+      }
+
+      .read-more:hover::before {
+        width: 300px;
+        height: 300px;
+      }
+
+      .read-more:hover {
+        color: white;
+        border-color: var(--soft-pink);
+      }
+
+      /* ═══════════════════════════════════════════════════════════════════
+         POST SECTIONS
+         ═══════════════════════════════════════════════════════════════════ */
+
+      .post-section {
+        margin-bottom: 60px;
+      }
+
+      .section-title {
+        font-family: 'Impact', sans-serif;
+        font-size: 42px;
+        color: var(--soft-pink);
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+        border-bottom: 3px solid var(--crimson);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      .post-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 25px;
+      }
+
+      .post-card {
+        background: linear-gradient(135deg, var(--content-bg), #252530);
+        border: 2px solid var(--slate);
+        border-radius: 8px;
+        padding: 25px;
+        position: relative;
+        transition: all 0.3s ease;
+        overflow: hidden;
+      }
+
+      .card-accent {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: var(--crimson);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease;
+      }
+
+      .post-card:hover .card-accent {
+        transform: scaleX(1);
+      }
+
+      .post-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(160, 17, 73, 0.4);
+        border-color: var(--crimson);
+      }
+
+      .post-card h3 {
+        font-size: 22px;
+        color: var(--crimson);
+        margin-bottom: 8px;
+        font-weight: 700;
+      }
+
+      .post-card .date {
+        display: block;
+        font-size: 13px;
+        color: var(--text-muted);
+        margin-bottom: 15px;
+        font-style: italic;
+      }
+
+      .post-card p {
+        color: var(--text-main);
+        line-height: 1.7;
+        margin-bottom: 15px;
+      }
+
+      .card-footer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        padding-top: 15px;
+        border-top: 1px solid var(--slate);
+      }
+
+      .tag {
+        background: var(--black-light);
+        border: 1px solid var(--slate);
+        color: var(--soft-pink);
+        padding: 4px 10px;
+        border-radius: 12px;
+        font-size: 11px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+      }
+
+      .tag:hover {
+        background: var(--crimson);
+        color: white;
+        border-color: var(--crimson);
+        transform: scale(1.05);
+      }
+
+      /* ═══════════════════════════════════════════════════════════════════
+         SIDEBAR
+         ═══════════════════════════════════════════════════════════════════ */
+
+      .sidebar {
+        position: sticky;
+        top: 80px;
+        height: fit-content;
+      }
+
+      .sidebar-card {
+        background: var(--content-bg);
+        border: 2px solid var(--slate);
+        border-left: 4px solid var(--crimson);
+        border-radius: 8px;
+        padding: 25px;
+        margin-bottom: 25px;
+      }
+
+      .sidebar-card h3 {
+        color: var(--soft-pink);
+        font-size: 20px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .sidebar-card p {
+        color: var(--text-main);
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 10px;
+      }
+
+      .category-list {
+        list-style: none;
+      }
+
+      .category-list li {
+        margin-bottom: 10px;
+      }
+
+      .category-list a {
+        color: var(--text-main);
+        text-decoration: none;
+        transition: color 0.3s ease;
+        display: block;
+        padding: 8px 0;
+      }
+
+      .category-list a:hover {
+        color: var(--crimson);
+        padding-left: 10px;
+      }
+
+      .social-links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .social-btn {
+        display: block;
+        background: var(--black-light);
+        border: 2px solid var(--crimson);
+        color: var(--soft-pink);
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+      }
+
+      .social-btn:hover {
+        background: var(--crimson);
+        color: white;
+        transform: translateX(5px);
+      }
+
+      .stats {
+        text-align: center;
+      }
+
+      .stat-item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+      }
+
+      .stat-number {
+        font-size: 36px;
+        font-weight: bold;
+        color: var(--crimson);
+      }
+
+      .stat-label {
+        font-size: 12px;
+        color: var(--text-muted);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      /* ═══════════════════════════════════════════════════════════════════
+         FOOTER
+         ═══════════════════════════════════════════════════════════════════ */
+
+      #footer {
+        background-color: var(--black-light);
+        border-top: 2px solid var(--slate);
+        padding: 30px;
+        text-align: center;
+        color: var(--text-muted);
+        margin-top: 60px;
+      }
+
+      /* ═══════════════════════════════════════════════════════════════════
+         RESPONSIVE
+         ═══════════════════════════════════════════════════════════════════ */
+
+      @media (max-width: 1200px) {
+        .content-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .sidebar {
+          position: static;
+        }
+
+        .post-grid {
+          grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        }
+      }
+
+      @media (max-width: 768px) {
+        .site-title {
+          font-size: 48px;
+        }
+
+        .header-characters {
+          display: none;
+        }
+
+        #navbar ul {
+          flex-wrap: wrap;
+        }
+
+        .page-title {
+          font-size: 42px;
+        }
+
+        .section-title {
+          font-size: 32px;
+        }
+
+        .post-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+
   </body>
 </html>
