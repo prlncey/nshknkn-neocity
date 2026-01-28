@@ -61,6 +61,12 @@ body {
   font-family: 'Nunito', sans-serif;
   margin: 0;
   background-color: var(--black-bg);
+  background-image: url('images/black-star-background.png');
+  background-repeat: repeat;
+  background-size: 100px;
+  /* background-image: url('images/black-scars.jpg');
+  background-repeat: repeat;
+  background-size:25%; */
   color: var(--text-main);
   line-height: 1.6;
 }
